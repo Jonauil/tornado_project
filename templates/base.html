@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>tornado python</title>
+</head>
+<body>
+    <header>
+        {% block header %} {% end %}
+        <link rel="stylesheet" type="text/css" href="{{ static_url("css/style.css")}}">
+    </header>
+    <content>
+        {% block body %} {% end %}
+    </content>
+    <footer>
+        {% set website = "<a href='http://www.nikugame.com'>welcome to my website</a>" %}
+        {% raw website %}
+    </footer>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{static_url("js/myscript.js")}}"></script>
+
+</body>
+</html>
